@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catálogo de Mangas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <h1>¡Catálogo de Mangas!</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="foro.html">Foro</a></li>
+                <li><a href="#suscripcion">Suscripción</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Catálogo -->
+    <section class="catalogo">
+        <h2>Explora nuestros mangas</h2>
+        <div class="manga-grid">
+            <div class="manga-card">
+                <img src="images/naruto.jpg" alt="Portada de Naruto">
+                <h3>Naruto</h3>
+                <!-- Enlace que llevará a la página de detalles -->
+                <a href="detalle.html?manga=naruto" class="ver-mas">Ver más</a>
+            </div>
+            <div class="manga-card">
+                <img src="images/one-piece.jpg" alt="Portada de One Piece">
+                <h3>One Piece</h3>
+                <a href="detalle.html?manga=onepiece" class="ver-mas">Ver más</a>
+            </div>
+            <div class="manga-card">
+                <img src="images/attack-on-titan.jpg" alt="Portada de Attack on Titan">
+                <h3>Attack on Titan</h3>
+                <a href="detalle.html?manga=attackontitan" class="ver-mas">Ver más</a>
+            </div>
+            <div class="manga-card">
+                <img src="images/bleach.jpg" alt="Portada de Bleach">
+                <h3>Bleach</h3>
+                <a href="detalle.html?manga=bleach" class="ver-mas">Ver más</a>
+            </div>
+        </div>
+    </section>
+    
+     <!-- Sección de Suscripción -->
+     <section id="suscripcion" class="suscripcion">
+        <h2>¡Suscríbete para recibir novedades!</h2>
+        <p>Regístrate para estar al día con los nuevos capítulos y noticias.</p>
+        <form id="form-suscripcion">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            
+            <button type="submit">Suscribirse</button>
+        </form>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Komaink | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
